@@ -32,8 +32,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'omniauth-openid'
 gem 'omniauth-steam'
-
+gem 'multi_json'
 gem 'figaro'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
