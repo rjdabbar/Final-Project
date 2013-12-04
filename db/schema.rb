@@ -11,6 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20131204000502) do
+
+  create_table "players", force: true do |t|
+    t.string   "steam_id"
+    t.string   "persona_name"
+    t.string   "profile_url"
+    t.string   "avatar"
+    t.string   "avatar_medium"
+    t.string   "avatar_full"
+    t.string   "persona_state"
+    t.string   "community_visibility_state"
+    t.string   "profile_state"
+    t.string   "last_log_off"
+    t.string   "comment_permission"
+    t.string   "real_name"
+    t.string   "primary_clan_id"
+    t.string   "time_created"
+    t.string   "game_id"
+    t.string   "game_server_ip"
+    t.string   "game_extra_info"
+    t.string   "loc_country_code"
+    t.string   "loc_state_code"
+    t.string   "loc_city_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

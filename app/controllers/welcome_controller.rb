@@ -7,8 +7,9 @@ class WelcomeController < ApplicationController
     if session.key? :current_user
       url = URI.parse("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=#{ENV['STEAM_WEB_API_KEY']}&steamids=#{session[:current_user][:uid]}")
       res = Net::HTTP::get(url)
-      @player_summary = JSON.parse(res)
+      
     end
+    @player_summary = JSON.parse(res)
   end
 
 
